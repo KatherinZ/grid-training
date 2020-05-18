@@ -18,14 +18,15 @@
   format('truetype');
 }
 body{
-  background-color: #000;
+  overflow-x: hidden;
 }
 h3{
   font-family: "Gilroy Bold";
-  color: #FFF;
+  font-size: 1.3vw;
+  color: #000;
   padding: 1vw;
   margin-top: -1vw;
-  margin-bottom: 1vw;;
+  margin-bottom: 1vw;
 }
 p{
   font-family: "Gilroy Regular";
@@ -61,41 +62,43 @@ a:hover{
 }
 
 .tech_1 {
-  background-color: #000;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
 }
 .tech_2 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
 }
 .tech_3 {
-  background-color: #000;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 1;
   grid-row-end: 3;
-
 }
 
 .tech_4 {
-  background-color: #fff;
-  color: #000;
-}
-.tech_4 h3{
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
   color: #000;
 }
 .tech_5 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
   grid-row-start: 2;
   grid-row-end: 4;
 }
 .tech_6 {
-  background-color: #fff;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
   color: #000;
   grid-column-start: 2;
   grid-column-end: 3;
@@ -112,83 +115,94 @@ a:hover{
   background-color: #C01E1E;
 }
 .tech_7 {
-  background-color: #C01E1E;
-  color: #FFF;
-
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 }
 .tech_8 {
-  background-color: #000;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
   grid-column-start: 2;
   grid-column-end: 5;
 }
 .tech_9 {
-  background-color: #FFF;
-  color: #FFF;
-
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
+}
+.tech_9 img{
+  height: 5vw;
+  margin-left: 7vw;
+}
+.tech_9 h3{
+  margin-top: -3.5vw;
 }
 .tech_10 {
-  background-color: #000;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
 }
 .tech_11 {
-  background-color: #FFF;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
 }
 .tech_12 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
   grid-column-start: 3;
   grid-column-end: 5;
 }
 .tech_13 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
+  color: #000;
 
 }
 .tech_14 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_15 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_16 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_17 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_7 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_18 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_19 {
-  background-color: #C01E1E;
-  color: #FFF;
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 
 }
 .tech_20 {
-  background-color: #C01E1E;
-  color: #FFF;
-
+  background-color: none;
+  border: 0.1vw solid #C01E1E;
 }
  img{
   max-width: 21vw;
@@ -199,7 +213,7 @@ a:hover{
   max-height: 7vw;
 }
 .tech_3 img{
-  min-width: 28vw;
+  min-width: 26.5vw;
   height: 25vw;
   filter: grayscale(100%);
 }
