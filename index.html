@@ -69,18 +69,18 @@
   </div>
     <div class="tech_5">
       <img src="img/central.png" alt="">
-      <h3>Processing JS</h3>
+      <h3> Mousetracking p5 JS</h3>
       <div class="text">
-        <p>Использование эффектов CSS может давать результат, аналогичный наложению слоев при работе в&nbsp;графическом редакторе.</p>
+        <p>Отвечает за создание композиций&nbsp;на&nbsp;p5, привязанных к&nbsp;движению мыши и&nbsp;манипулируемых&nbsp;ей.</p>
         <div class="code">
           <p>
-            <span>  if (rotate) {</span>
-            <span>   rotate(frameCount / 1) </span>
-            <span>   arc(-100, -100, 200, 200, 200, HALF_PI) </span>
-            <span>   if (mouseY > 400 && mouseX > 600) { </span>
-            <span>   arcColor = color(15, 65, 250) </span>
-            <span>   } else { </span>
-            <span>   arcColor = color(220, 20, 60)} </span>
+            <span>    stroke(255)</span>
+              <span>line(mouseX, mouseY, width/2, height/2)</span>
+                <span>if (mouseIsPressed) {</span>
+                  <span>stroke(255, 0, 0)</span>
+                  <span>fill(255, 0, 0)</span>
+                <span>extraCanvas.ellipse(mouseX, mouseY, 50, 50)</span>
+              <span>}</span>
 
           </p>
         </div>
@@ -93,9 +93,19 @@
     <div class="tech_7">
       <img src="img/cursor.png" alt="">
       <h3>Mouse interactions</h3>
-      <p>Дает больше возможностей пользователю взаимодействовать с веб-средой с помощью мыши (наведение/клик).</p>
-      <p></p>
+      <p>Дает больше возможностей пользователю взаимодействовать с&nbsp;веб-средой с&nbsp;помощью мыши (наведение/клик).</p>
       <a href="javaScript">javaScript</a>
+      <!-- <div class="hidden">
+        <div class="code">
+          <p>
+                <span>document.getElementById('element_es_2').onclick = function(){</span>
+                <span>let pathOne = path0[i]</span>
+                <span>pathOne.setAttribute('stroke-dashoffset', offset)</span>
+                <span>draw(){...}</span>
+                <span>}</span>
+          </p>
+        </div>
+      </div> -->
    </div>
     <div class="tech_8">
       <img src="img/strangerr.gif" alt="">
@@ -109,10 +119,10 @@
       <a href="css">CSS</a>
   </div>
   <div class="tech_9">
-      <img src="img/loop.jpg" alt="">
+      <img src="img/inf.png" alt="">
       <h3>FOR cycle</h3>
       <div class="text">
-        <p>Цикл позволяет упростить код с&nbsp;помощью повторного выполнения одниго и того же действия.</p>
+        <p>Цикл позволяет упростить код с&nbsp;помощью повторного выполнения одного и того же действия.</p>
         <div class="code">
           <p>
             <span>for (let i = 0; i < path0.length; i++){</span>
@@ -138,21 +148,15 @@
       <img src="img/css_anim2.gif" alt="">
       <h3>CSS Animation</h3>
       <div class="text">
-        <p>Возможность создавать анимации без применения javaScript.</p>
+        <p>Возможность создавать анимации без&nbsp;применения javaScript.</p>
         <div class="code">
           <p>
-            <span>animation: opacity_2 5s ease-in-out infinite;
+            <span>animation: opac 5s ease-in-out infinite;
             }</span>
-            <span>@keyframes opacity_2 {</span>
-            <span>0%{</span>
-            <span>  opacity: 0.4;</span>
-            <span>}</span>
-            <span>50%{</span>
-            <span>  opacity: 1;</span>
-            <span>}</span>
-            <span>100%{</span>
-            <span>  opacity: 0.4;</span>
-            <span>}</span>
+            <span>@keyframes opac {</span>
+            <span>0%{opacity: 0.4;}</span>
+            <span>50%{opacity: 1;}</span>
+            <span>100%{opacity: 0.4;}</span>
             <span>}</span>
           </p>
         </div>
@@ -160,24 +164,19 @@
       <a href="javaScript">CSS</a>
   </div>
     <div class="tech_12">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
+      <img src="img/paths.png " alt="">
       <h3>SVG path animation</h3>
       <div class="text">
-        <p>Цикл позволяет упростить код с&nbsp;помощью повторного выполнения одниго и того же действия.</p>
+        <p>Дает возможность манипулиовать анимацией контурных SVG на&nbsp;сайте.</p>
         <div class="code">
           <p>
-            <span>let svg2 = document.querySelectorAll('.all_elements svg')</span>
-            <span>let path2 = document.querySelectorAll('.all_elements path')</span>
+            <span>let path2 = document.querySelectorAll('.smth path')</span>
             <span>for (let i = 0; i < path2.length; i++){</span>
-              <span>let pathOne = path2[i]</span>
-              <span>let offset = anime.setDashoffset(pathOne)</span>
               <span>pathOne.setAttribute('stroke-dashoffset', offset)</span>
               <span>anime({</span>
                 <span>targets: pathOne,</span>
                 <span>strokeDashoffset: [offset, 0],</span>
-                <span>duration: 4000,</span>
-                <span>delay: 500,</span>
-                <span>loop: true,</span>
+                <span>loop: true</span>
               <span>})</span>
           </p>
         </div>
@@ -185,11 +184,20 @@
       <a href="javaScript">javaScript</a>
   </div>
     <div class="tech_13">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
+      <img src="img/3d.jpg" alt="">
+        <h3> 3D objects p5 JS</h3>
+        <div class="text">
+          <p>Библиотека дает возможность работать с&nbsp;3D-объектами, анимировать их&nbsp;и&nbsp;взаимодействовать при помощи мыши.</p>
+          <div class="code">
+            <p>
+              <span>rotateZ(frameCount* 0.01)</span>
+              <span>rotateX(frameCount* 0.01)</span>
+              <span>rotateY(frameCount* 0.01)</span>
+              <span>noFill()</span>
+            </p>
+          </div>
+        </div>
+        <a href="javaScript">javaScript</a>
   </div>
     <div class="tech_14">
       <!-- <img src="img/equalizer.jpeg" alt=""> -->
@@ -198,48 +206,47 @@
       <p></p>
       <a href="javaScript">javaScript</a>
   </div>
-    <div class="tech_15">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
+  <div class="tech_15">
+      <div class="circle"></div>
+      <div class="circle"></div>
   </div>
     <div class="tech_16">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
+      <img src="img/" alt="">
+        <h3> 3D animation p5 JS</h3>
+        <div class="text">
+          <p>Возможность создавать анимации без&nbsp;применения javaScript.</p>
+          <div class="code">
+            <p>
+              <span>rotateZ(frameCount* 0.01)</span>
+              <span>rotateX(frameCount* 0.01)</span>
+              <span>rotateY(frameCount* 0.01)</span>
+              <span>noFill()</span>
+            </p>
+          </div>
+        </div>
+        <a href="javaScript">javaScript</a>
   </div>
     <div class="tech_17">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
+      <img src="img/morph.gif" alt="">
+      <h3>Morphing</h3>
+      <p>Возможность осуществлять плавное превращение одной фигуры в&nbsp;другую при&nbsp;помощи анимации на&nbsp;anime.js.</p>
+      <div class="code">
+        <p>
+          <span>var morphing = anime({</span>
+            <span>targets: 'poly',</span>
+            <span>points: [</span>
+              <span>{ value: '143 31 21 196 286 223' },</span>
+              <span>{ value: '243 31 21 196 286 223' },</span>
+              <span>{ value:'243 31 121 196 286 223'}</span>
+        </p>
+      </div>
       <a href="javaScript">javaScript</a>
+    </div>
+
+
   </div>
-    <div class="tech_18">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
-  </div>
-    <div class="tech_19">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
-  </div>
-    <div class="tech_20">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
-  </div>
+
+
 
  </div>
   </body>

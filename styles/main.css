@@ -58,7 +58,7 @@ a:hover{
 .wrapper{
   display: grid;
   grid-template-columns: 6fr 4fr 4fr 5fr 7fr ;
-  grid-template-rows: 30vw 20vw 25vw 30vw 25vw;
+  grid-template-rows: 30vw 20vw 25vw 30vw 30vw;
 }
 
 .tech_1 {
@@ -119,6 +119,14 @@ a:hover{
   border: 0.1vw solid #C01E1E;
   color: #000;
 }
+
+/* .tech_7 .hidden{
+  opacity:0;
+  width: 20vw;
+}
+.tech_7 .hidden:hover{
+  opacity:1;
+} */
 .tech_8 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
@@ -132,13 +140,7 @@ a:hover{
   border: 0.1vw solid #C01E1E;
   color: #000;
 }
-.tech_9 img{
-  height: 5vw;
-  margin-left: 7vw;
-}
-.tech_9 h3{
-  margin-top: -3.5vw;
-}
+
 .tech_10 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
@@ -173,19 +175,37 @@ a:hover{
 .tech_15 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
 
 }
 .tech_16 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
-
+}
+.tech_15 .circle{
+  width: 27vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: #C01E1E;
+  margin-left: 1vw;
+  margin-top: 0.5vw;
+}
+.tech_15 .circle:first-child{
+    background-color: #C01E1E;
+}
+.tech_15 .circle:last-child{
+    background-color: #000;
+}
+.tech_15 .circle:first-child:hover{
+  background-color: #000;
+}
+.tech_15 .circle:last-child:hover{
+  background-color: #C01E1E;
 }
 .tech_17 {
-  background-color: none;
-  border: 0.1vw solid #C01E1E;
-
-}
-.tech_7 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
 
@@ -193,16 +213,16 @@ a:hover{
 .tech_18 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
-
 }
 .tech_19 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
-
 }
 .tech_20 {
   background-color: none;
   border: 0.1vw solid #C01E1E;
+  grid-column-start: 3;
+  grid-column-end: 6;
 }
  img{
   max-width: 21vw;
@@ -224,7 +244,28 @@ a:hover{
   display: flex;
   width: 90vw;
 }
-
+.tech_9 img{
+  max-width: 13vw;
+  height: auto;
+  margin-left: 4.2vw;
+}
 .tech_10 img{
   filter: grayscale(100%);
+}
+.tech_12 img{
+  margin-left: 5vw;
+  height: 5vw;
+}
+.tech_12 p,
+.tech_18 p{
+  max-width: 35vw;
+}
+.tech_13 img{
+  filter: saturate(85%);
+}
+.tech_17 img{
+    filter: hue-rotate(90deg);
+max-width: 12vw;
+height: auto;
+margin-left: 5vw;
 }
