@@ -145,23 +145,20 @@
       <a href="javaScript">javaScript</a>
   </div>
   <div class="tech_11">
-      <img src="img/css_anim2.gif" alt="">
-      <h3>CSS Animation</h3>
-      <div class="text">
-        <p>Возможность создавать анимации без&nbsp;применения javaScript.</p>
-        <div class="code">
-          <p>
-            <span>animation: opac 5s ease-in-out infinite;
-            }</span>
-            <span>@keyframes opac {</span>
-            <span>0%{opacity: 0.4;}</span>
-            <span>50%{opacity: 1;}</span>
-            <span>100%{opacity: 0.4;}</span>
-            <span>}</span>
-          </p>
+      <img src="img/3d.jpg" alt="">
+        <h3> 3D objects p5 JS</h3>
+        <div class="text">
+          <p>Библиотека дает возможность работать с&nbsp;3D-объектами, анимировать их&nbsp;и&nbsp;взаимодействовать при помощи мыши.</p>
+          <div class="code">
+            <p>
+              <span>rotateZ(frameCount* 0.01)</span>
+              <span>rotateX(frameCount* 0.01)</span>
+              <span>rotateY(frameCount* 0.01)</span>
+              <span>noFill()</span>
+            </p>
+          </div>
         </div>
-      </div>
-      <a href="javaScript">CSS</a>
+        <a href="javaScript">javaScript</a>
   </div>
     <div class="tech_12">
       <img src="img/paths.png " alt="">
@@ -184,43 +181,56 @@
       <a href="javaScript">javaScript</a>
   </div>
     <div class="tech_13">
-      <img src="img/3d.jpg" alt="">
-        <h3> 3D objects p5 JS</h3>
-        <div class="text">
-          <p>Библиотека дает возможность работать с&nbsp;3D-объектами, анимировать их&nbsp;и&nbsp;взаимодействовать при помощи мыши.</p>
-          <div class="code">
-            <p>
-              <span>rotateZ(frameCount* 0.01)</span>
-              <span>rotateX(frameCount* 0.01)</span>
-              <span>rotateY(frameCount* 0.01)</span>
-              <span>noFill()</span>
-            </p>
-          </div>
+      <img src="img/css_anim2.gif" alt="">
+      <h3>CSS Animation</h3>
+      <div class="text">
+        <p>Возможность создавать анимации без&nbsp;применения javaScript.</p>
+        <div class="code">
+          <p>
+            <span>animation: opac 5s ease-in-out infinite;
+            }</span>
+            <span>@keyframes opac {</span>
+            <span>0%{opacity: 0.4;}</span>
+            <span>50%{opacity: 1;}</span>
+            <span>100%{opacity: 0.4;}</span>
+            <span>}</span>
+          </p>
         </div>
-        <a href="javaScript">javaScript</a>
+      </div>
+      <a href="javaScript">CSS</a>
   </div>
     <div class="tech_14">
-      <!-- <img src="img/equalizer.jpeg" alt=""> -->
-      <h3>Scroll magic</h3>
-      <p>Анимация поэтапно привязывается к&nbsp;скроллу и&nbsp;происходит постепенно в&nbsp;соответствии с&nbsp;продвижением пользователя по&nbspстранице</p>
-      <p></p>
-      <a href="javaScript">javaScript</a>
+      <img src="img/grid.jpg" alt="">
+      <h3>CSS Grids</h3>
+      <p>Упрощает создание сайта, построенного на основе сетки и&nbsp;работу с&nbsp;блоками при адаптивной верстке.</p>
+      <div class="code">
+        <p>
+          <span>.wrapper{</span>
+          <span>display: grid;</span>
+        <span>grid-template-columns: 6fr 4fr 4fr 5fr 7fr;</span>
+      <span>grid-template-rows: 30vw 20vw 25vw 30vw 30vw;}</span>
+        </p>
+      </div>
+      <a href="CSS">CSS</a>
   </div>
   <div class="tech_15">
       <div class="circle"></div>
       <div class="circle"></div>
   </div>
     <div class="tech_16">
-      <img src="img/" alt="">
-        <h3> 3D animation p5 JS</h3>
+      <img src="img/generation.png" alt="">
+        <h3>Objects generation</h3>
         <div class="text">
-          <p>Возможность создавать анимации без&nbsp;применения javaScript.</p>
+          <p>Создание говых шейпов "на лету" и взаимодействие с ними при помощи цикла for и рандома в anime.js</p>
           <div class="code">
             <p>
-              <span>rotateZ(frameCount* 0.01)</span>
-              <span>rotateX(frameCount* 0.01)</span>
-              <span>rotateY(frameCount* 0.01)</span>
-              <span>noFill()</span>
+              <span>for (let i = 0; i < numberOfRects; i += 1) {</span>
+                <span>let div = document.createElement('div')</span>
+                <span>if (i % 2 === 0){</span>
+                  <span>div.style.borderRadius = "100%"</span>
+                <span>} else{</span>
+                  <span>div.style.borderRadius = "0%"</span>
+                }</span>
             </p>
           </div>
         </div>
@@ -232,7 +242,7 @@
       <p>Возможность осуществлять плавное превращение одной фигуры в&nbsp;другую при&nbsp;помощи анимации на&nbsp;anime.js.</p>
       <div class="code">
         <p>
-          <span>var morphing = anime({</span>
+          <span>let morphing = anime({</span>
             <span>targets: 'poly',</span>
             <span>points: [</span>
               <span>{ value: '143 31 21 196 286 223' },</span>
