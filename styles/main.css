@@ -65,7 +65,6 @@ a:hover{
   background-color: none;
   border: 0.1vw solid #C01E1E;
   color: #000;
-
 }
 .tech_2 {
   background-color: none;
@@ -264,8 +263,20 @@ a:hover{
   filter: saturate(85%);
 }
 .tech_17 img{
-    filter: hue-rotate(90deg);
-max-width: 12vw;
-height: auto;
-margin-left: 5vw;
+  filter: hue-rotate(90deg);
+  max-width: 12vw;
+  height: auto;
+  margin-left: 5vw;
+}
+.tech_1, .tech_2, .tech_3, .tech_4{
+  border-top: 0.15vw solid #C01E1E;
+}
+.tech_1, .tech_5, .tech_10, .tech_14{
+  border-left: 0.15vw solid #C01E1E;
+}
+.tech_4, .tech_7, .tech_9, .tech_13, .tech_17{
+  border-right: 0.15vw solid #C01E1E;
+}
+.tech_14, .tech_15, .tech_16, .tech_17{
+  border-bottom: 0.15vw solid #C01E1E;
 }
