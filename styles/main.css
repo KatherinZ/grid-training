@@ -280,3 +280,25 @@ a:hover{
 .tech_14, .tech_15, .tech_16, .tech_17{
   border-bottom: 0.15vw solid #C01E1E;
 }
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 320px) {
+.wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+img{
+  max-width: 80vw;
+  margin-left: 10vw;
+}
+.tech_2 img{
+  min-width: 80vw;
+}
+.tech_3 img{
+  width: 80vw;
+  height: auto;
+}
+.tech_10{
+  width: 80vw;
+}
